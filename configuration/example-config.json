@@ -1,0 +1,6 @@
+{
+    "token": "BOT TOKEN HERE",
+    "emote_server_id": "SERVER WITH REQUIRED EMOTES HERE",
+    "emote_server_id_2": "SERVER WITH OTHER HALF OF EMOTES HERE"
+    "delete this entry": "And also rename the file to config.json"
+}

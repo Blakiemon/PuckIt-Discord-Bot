@@ -1,0 +1,30 @@
+
+DISSECTOR INFO FOR INVISIBLE CHARACTERS
+
+Numeric substitutes:
+
+
+WORD JOINER U+2060                   - 0
+FUNCTION APPLICATION U+2061          - 1
+INVISIBLE TIMES U+2062               - 2
+INVISIBLE SEPARATOR U+2063           - 3
+INVISIBLE PLUS U+2064		     - 4
+INHIBIT SYMMETRIC SWAPPING U+206A    - 5
+ACTIVATE SYMMETRIC SWAPPING U+206B   - 6
+INHIBIT ARABIC FORM SHAPING U+206C   - 7
+ACTIVATE ARABIC FORM SHAPING U+206D  - 8
+NATIONAL DIGIT SHAPES U+206E         - 9
+NOMINAL DIGIT SHAPES U+206F	     - Negative Sign
+
+Special Markers:
+
+
+NOMINAL DIGIT SHAPES U+206F          - New Object Marker
+ZERO WIDTH NON-JOINER U+200C         - Start Of (New) Row Marker
+ZERO WIDTH SPACE U+200B              - Is Collision Object (With ID) Marker
+LEFT-TO-RIGHT MARK U+200E            - Velocity -Y end marker
+RIGHT-TO-LEFT MARK U+200F            - Velocity X end marker
+
+First it will read the velocity (X first then end of x velocity marker) (Then y velocity until the end of y velocity marker)
+
+Then each row of the 2d array will start with row markers, and each object will start with "start of row" markers, each object will be represented by numeric substitute characters. To be encoded and decoded this way.
